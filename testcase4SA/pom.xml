@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.gg.sa</groupId>
-    <artifactId>testcase4SA</artifactId>
+    <artifactId>testcase</artifactId>
     <version>1.0.2</version>
     <dependencies>
         <dependency>
