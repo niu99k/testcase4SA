@@ -1,0 +1,65 @@
+{
+  "machine": {
+    "machineId": 1,
+    "takt": [
+      {
+        "jobId": 1,
+        "takt": 1
+      },
+      {
+        "jobId": 2,
+        "takt": 1
+      },
+      {
+        "jobId": 3,
+        "takt": 1
+      },
+      {
+        "jobId": 4,
+        "takt": 1
+      },
+      {
+        "jobId": 5,
+        "takt": 1
+      },
+      {
+        "jobId": 6,
+        "takt": 1
+      }
+    ]
+  },
+  "jobs": [
+    {
+      "jobId": 1,
+      "deadLine":2,
+      "next":[2,3]
+    },
+    {
+      "jobId": 2,
+      "deadLine":5,
+      "pre": [1],
+      "next":[4,5]
+    },
+    {
+      "jobId": 3,
+      "deadLine":4,
+      "pre": [1],
+      "next":[6]
+    },
+    {
+      "jobId": 4,
+      "deadLine":3,
+      "pre": [2]
+    },
+    {
+      "jobId": 5,
+      "deadLine":5,
+      "pre": [1]
+    },
+    {
+      "jobId": 6,
+      "deadLine":6,
+      "pre": [3],
+    }
+  ]
+}
