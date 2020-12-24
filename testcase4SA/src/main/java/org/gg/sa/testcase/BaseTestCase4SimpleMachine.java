@@ -38,8 +38,8 @@ public abstract class BaseTestCase4SimpleMachine implements LoadFile {
     }
 
     public void init(String jsonName) {
-        String path = BaseTestCase4SimpleMachine.class.getClassLoader().getResource("testcase1.json").getPath();
-        String s = readJsonFile(path);
+        InputStream inputStream = BaseTestCase4SimpleMachine.class.getClassLoader().getResourceAsStream("testcase1.json");
+        String s = readJsonFile(inputStream);
         JSONObject jsonObject = JSON.parseObject(s);
 
         this.machine = machine((JSONObject) jsonObject.get("machine"));
