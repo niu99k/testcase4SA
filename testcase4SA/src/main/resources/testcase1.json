@@ -59,7 +59,7 @@
     {
       "jobId": 6,
       "deadLine":6,
-      "pre": [3],
+      "pre": [3]
     }
   ]
 }

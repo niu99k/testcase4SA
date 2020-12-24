@@ -66,6 +66,7 @@ public abstract class BaseTestCase4SimpleMachine implements LoadFile {
                     Job job = new Job();
                     final JSONObject jobInfoJSONObject = (JSONObject) jobInfo;
                     job.setId(jobInfoJSONObject.getInteger("jobId"));
+                    job.setDeadLine(jobInfoJSONObject.getLong("deadLine"));
                     jobMap.put(job.getId(), job);
                     if (jobInfoJSONObject.containsKey("pre")) {
                         preMap.put(job.getId(), jobInfoJSONObject.getJSONArray("pre").toJavaList(Integer.class));
